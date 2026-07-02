@@ -3,11 +3,12 @@ import { ConflictException, NotFoundException } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
 import { getRepositoryToken } from '@nestjs/typeorm';
 import * as bcrypt from 'bcrypt';
+import { afterEach, beforeEach, describe, it } from 'node:test';
 import { Repository } from 'typeorm';
-import { CreateUserDto } from '../../../users/dto/create-user.dto';
-import { UpdateUserDto } from '../../../users/dto/update-user.dto';
-import { User } from '../../../users/entities/user.entity';
-import { UsersService } from '../../../users/users.service';
+import { CreateUserDto } from './dto/create-user.dto';
+import { UpdateUserDto } from './dto/update-user.dto';
+import { User } from './entities/user.entity';
+import { UsersService } from './users.service';
 
 // Mock do bcrypt
 jest.mock('bcrypt');
