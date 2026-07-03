@@ -55,6 +55,10 @@ src/
 # Instalar dependências
 yarn install
 
+# Configurar variáveis de ambiente
+cp .env.example .env
+# Edite .env se necessário — os valores padrão funcionam com o docker-compose.yml incluído
+
 # Subir os containers PostgreSQL (porta 5432 = aplicação, 5433 = testes)
 docker compose up -d
 
