@@ -120,8 +120,12 @@ Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 # Instalar dependências
 yarn install
 
+# Configurar variáveis de ambiente (obrigatório para testes de integração)
+cp .env.example .env
+# Edite .env se necessário — os valores padrão funcionam com o docker-compose.yml incluído
+
 # Subir os dois containers PostgreSQL antes de rodar qualquer teste
-docker compose up -d postgres postgres_test
+docker compose up -d
 ```
 
 ---
