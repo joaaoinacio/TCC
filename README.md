@@ -1,4 +1,4 @@
-# TCC API — NestJS REST API
+# TCC
 
 API REST de referência desenvolvida para o Trabalho de Conclusão de Curso:
 
